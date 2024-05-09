@@ -25,7 +25,7 @@
                             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="about.html">¿Quienes somos?</a></li>
                             <li class="nav-item"><a class="nav-link" href="pricing.html">Donaciones</a></li>
-                            <li class="nav-item"><a class="nav-link" href="faq.html">Preguntas Frecuentes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="faq.html">Cuestionario</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Temas</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
@@ -42,96 +42,135 @@
             <section class="py-5">
                 <div class="container px-5 my-5">
                     <div class="text-center mb-5">
-                        <h1 class="fw-bolder">Frequently Asked Questions</h1>
-                        <p class="lead fw-normal text-muted mb-0">How can we help you?</p>
+                        <h1 class="fw-bolder">Preguntas del mes</h1>
+                        <p class="lead fw-normal text-muted mb-0">Primera encuensta del mes.</p>
                     </div>
                     <div class="row gx-5">
                         <div class="col-xl-8">
                             <!-- FAQ Accordion 1-->
-                            <h2 class="fw-bolder mb-3">Account &amp; Billing</h2>
+                            <h2 class="fw-bolder mb-3">Preguntas 2024</h2>
                             <div class="accordion mb-5" id="accordionExample">
                                 <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button></h3>
+                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Mayo</button></h3>
                                     <div class="accordion-collapse collapse show" id="collapseOne" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                         <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong>
-                                            It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Accordion Item #2</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Accordion Item #3</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseThree" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
+                                            <!-- ENCUESTA -->
+                                            <form id="encuesta">
+                                                <h3>1.¿Qué tipo de enlace predomina en el agua (H₂O)?</h3>
+                                                <label id="respuesta1">
+                                                    <input type="radio" name="pregunta1" value="opcion1"> Covalente<br>
+                                                    <input type="radio" name="pregunta1" value="opcion2"> Ionico<br>
+                                                     <input type="radio" name="pregunta1" value="opcion3"> Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>2.¿Cuál es el tipo de enlace predominante en el cloruro de sodio (NaCl)?</h3>
+                                                <label id="respuesta2">
+                                                    <input type="radio" name="pregunta2" value="opcion1"> Covalente<br>
+                                                    <input type="radio" name="pregunta2" value="opcion2"> Ionico<br>
+                                                     <input type="radio" name="pregunta2" value="opcion3"> Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>3.¿Qué tipo de enlace se encuentra en el oxígeno molecular (O₂)??</h3>
+                                                <label id="respuesta3">
+                                                    <input type="radio" name="pregunta3" value="opcion1"> Covalente<br>
+                                                    <input type="radio" name="pregunta3" value="opcion2"> Ionico<br>
+                                                     <input type="radio" name="pregunta3" value="opcion3"> Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>4.¿Qué tipo de enlace es característico en el aluminio metálico (Al)?</h3>
+                                                <label id="respuesta4">
+                                                    <input type="radio" name="pregunta4" value="opcion1"> Covalente<br>
+                                                    <input type="radio" name="pregunta4" value="opcion2"> Ionico<br>
+                                                     <input type="radio" name="pregunta4" value="opcion3"> Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>5.¿Cuál es el tipo de enlace presente en el dióxido de carbono (CO₂)?</h3>
+                                                <label id="respuesta5">
+                                                    <input type="radio" name="pregunta5" value="opcion1"> Covalente<br>
+                                                    <input type="radio" name="pregunta5" value="opcion2"> Ionico<br>
+                                                     <input type="radio" name="pregunta5" value="opcion3"> Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>6.¿Qué tipo de enlace se forma cuando dos átomos comparten electrones?</h3>
+                                                <label id="respuesta6">
+                                                    <input type="radio" name="pregunta6" value="opcion1"> Enlace Metalico<br>
+                                                    <input type="radio" name="pregunta6" value="opcion2"> Enlace Covalente<br>
+                                                     <input type="radio" name="pregunta6" value="opcion3"> Enlace Ionico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>7.¿Cuál es la característica principal de un enlace iónico?</h3>
+                                                <label id="respuesta7">
+                                                    <input type="radio" name="pregunta7" value="opcion1"> Tranferencia Electrones<br>
+                                                    <input type="radio" name="pregunta7" value="opcion2"> Comparticion Electrones<br>
+                                                     <input type="radio" name="pregunta7" value="opcion3"> Movilidad Electrones<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>8.¿Qué tipo de enlace se encuentra en el cloruro de sodio (NaCl)?</h3>
+                                                <label id="respuesta8">
+                                                    <input type="radio" name="pregunta8" value="opcion1"> Enlace Covalente<br>
+                                                    <input type="radio" name="pregunta8" value="opcion2"> Enlace Ionico<br>
+                                                     <input type="radio" name="pregunta8" value="opcion3"> Enlace Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>9.¿Qué caracteriza a un enlace metálico?</h3>
+                                                <label id="respuesta9">
+                                                    <input type="radio" name="pregunta9" value="opcion1"> Transferencia Electrones<br>
+                                                    <input type="radio" name="pregunta9" value="opcion2"> Comparticion de Electrones<br>
+                                                     <input type="radio" name="pregunta9" value="opcion3"> Movilidad Electrones<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
+                                            <form id="encuesta">
+                                                <h3>10.¿Qué tipo de enlace se forma entre dos átomos con electronegatividades muy diferentes?</h3>
+                                                <label id="respuesta10">
+                                                    <input type="radio" name="pregunta10" value="opcion1"> Enlace Ionico<br>
+                                                    <input type="radio" name="pregunta10" value="opcion2"> Enlace Covalente<br>
+                                                     <input type="radio" name="pregunta10" value="opcion3"> Enlace Metalico<br>
+                                                </label>
+                                                <button type="button" onclick="verificarRespuestas()">Verificar</button>
+                                            </form>
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!-- FAQ Accordion 2-->
-                            <h2 class="fw-bolder mb-3">Website Issues</h2>
-                            <div class="accordion mb-5 mb-xl-0" id="accordionExample2">
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">Accordion Item #1</button></h3>
-                                    <div class="accordion-collapse collapse show" id="collapseOne2" aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the first item's accordion body.</strong>
-                                            It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">Accordion Item #2</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseTwo2" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the second item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="accordion-header" id="headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">Accordion Item #3</button></h3>
-                                    <div class="accordion-collapse collapse" id="collapseThree2" aria-labelledby="headingThree" data-bs-parent="#accordionExample2">
-                                        <div class="accordion-body">
-                                            <strong>This is the third item's accordion body.</strong>
-                                            It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
-                                            <code>.accordion-body</code>
-                                            , though the transition does limit overflow.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div class="col-xl-4">
                             <div class="card border-0 bg-light mt-xl-5">
                                 <div class="card-body p-4 py-lg-5">
                                     <div class="d-flex align-items-center justify-content-center">
                                         <div class="text-center">
-                                            <div class="h6 fw-bolder">Have more questions?</div>
+                                            <div class="h6 fw-bolder">¿Quieres ayudarnos a hacer mas preguntas?</div>
                                             <p class="text-muted mb-4">
-                                                Contact us at
+                                                Contactanos en:
                                                 <br />
-                                                <a href="#!">support@domain.com</a>
+                                                <a href="https://mail.google.com/mail/u/2/#inbox">labgenio6@gmail.com</a>
                                             </p>
                                             <div class="h6 fw-bolder">Follow us</div>
                                             <a class="fs-5 px-2 link-dark" href="#!"><i class="bi-twitter"></i></a>
